@@ -1,0 +1,337 @@
+@charset "utf-8";
+
+/*版面寬度*/
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
+    }
+}
+
+/*header 電腦觀看時右移*/
+@media screen and (min-width: 700px) {
+  .style1
+  {
+    padding-left: 385px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mytest1
+{
+ padding-left: 90px;
+}
+
+.mybg1
+{
+  margin-left: -15px;
+}
+
+.mybg4
+{
+  margin-left:-15px;
+}
+}
+
+
+/*藍色BAR 頭像圖片調整位置*/
+.mytest1
+{
+  padding-top: 30px;
+}
+
+
+/**/
+.mystyle4
+{
+  width: 660px;
+}
+
+
+/*區塊1 封面大小寫死*/
+.imgsection1
+{
+  width: 255px;
+  height: 347px;
+}
+
+/*區塊2 封面大小寫死*/
+
+.imgsection2
+{
+  width: 200px;
+  height: 250px;
+}
+/*區塊3 封面大小寫死*/
+
+.imgsection3
+{
+  width: 180px;
+  height: 250px;
+}
+
+
+/*profile 圖片*/
+.imgsize
+{
+ width: 50px;
+ height: 50px;
+}
+/*會員藍色區塊底色*/
+.mybg1
+{
+  border-radius: 15px;
+  margin-top: -25px;
+  background-color: #768EA9;
+}
+
+/*近期閱讀淺灰色背景桌布*/
+.mybg4
+{
+  border-radius: 15px;
+  margin-top: -70px;
+  background-color: #e6e1e1;
+}
+
+
+
+
+
+.mytest3
+{
+  padding-top: 5px;
+}
+
+
+/*書單封面調整位置*/
+.mytest2
+{
+  padding-top: 30px;
+}
+
+/*區塊title樣式*/
+.myfont1
+{
+ font-size: 22px;
+ background-color: #c6d9f1
+}
+
+/*灰色....button*/
+.mybtn1
+{
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+
+/*近期閱覽紀錄CARD位置調整*/
+.mycardeck1
+{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/*推薦作品-書本大綱*/
+.mytext1
+{
+
+  font-weight: bolder;
+}
+
+/*書籍名稱*/
+.myfont2
+{
+  font-weight: 500;
+  font-size: 24px;
+  color: black;
+}
+
+.myfont2:hover
+{
+  font-weight: 700;
+  font-size: 24px;
+  color: rgb(127, 101, 240);
+}
+
+.mystyle2
+{
+  font-size: 25px;
+}
+
+
+/*強制只能顯示...行*/
+.maxlength
+{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+
+/*modal*/
+.modal-backdrop {
+  background-color: rgba(0,0,0,.0001) !important;
+}
+
+.mystyle3 { 
+  top: -85px;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+.mytext2
+{
+  font-size: 20px;
+  text-align: center;
+  line-height: 1cm;
+
+}
+
+
+
+
+/*封面HOVER 效果*/
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+
+/*星星圖示(目前是寫死的)*/
+.ratings {
+position: relative;
+vertical-align: middle;
+display: inline-block;
+color: #ddd; /*背景星星顏色*/
+overflow: hidden;
+font-size: 30px; /*調整字體大小可放大縮小星星*/
+text-shadow: 0px 1px 0 #999;
+}
+.full_star {
+width: 90%; /*調整寬度可變更星等*/
+position: absolute;
+left: 0;
+top: 0;
+white-space: nowrap;
+overflow: hidden;
+color: #D56A16; /*前景星星顏色*/
+}
+
+/*黑暗模式*/
+body {
+
+  background-color: white;
+  color: black;
+
+}
+
+
+.dark-mode header * {
+  background-color: #2F3437;
+  color: white;
+}
+.dark-mode footer * {
+  background-color: rgb(100, 99, 99);
+  color: white;
+}
+
+.dark-mode {
+  background-color:#373C3F;
+  color: white;
+}
+
+.dark-mode .mybg1 {
+  background-color:#373C3F;
+  color: white;
+}
+
+.dark-mode .mybg4 {
+  background-color:#373C3F;
+  color: white;
+}
+
+.dark-mode .myfont2 {
+  color: #FFF;
+}
+
+.dark-mode .modal-backdrop * {
+  background-color: rgba(0,0,0,.0001) !important;
+}

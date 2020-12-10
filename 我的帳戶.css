@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+
+
+/*設定版面寬度*/
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
+    }
+}
+
+
+/*header 電腦觀看時右移*/
+@media screen and (min-width: 700px) {
+  .style1
+  {
+    padding-left: 385px;
+  }
+
+}
+
+
+@media screen and (max-width: 700px) {
+  .mybg2
+  {
+    margin-left: -40px;
+    border-radius: 15px;
+    margin-top: -75px;
+    background-color: #e6e1e1;
+  }
+  
+
+}
+
+.mybg2
+{
+  border-radius: 15px;
+  margin-top: -75px;
+  background-color: #e6e1e1;
+}
+
+/*profile 圖片*/
+.imgsize
+{
+ width: 50px;
+ height: 50px;
+}
+
+/*table裡的書籍名稱button*/
+.mybutton1:hover
+{
+  background-color: deepskyblue;
+}
+
+.myfont1
+{
+  background-color: #c6d9f1;
+  font-size: 22px;
+  font-weight: bolder;
+  color: black;
+}
+
+
+/*背景顏色*/
+
+
+
+
+/*modal*/
+.modal-backdrop {
+  background-color: rgba(0,0,0,.0001) !important;
+}
+
+.mystyle3 { 
+  top: -85px;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+.mytext2
+{
+  font-size: 20px;
+  text-align: center;
+  line-height: 1cm;
+
+}
+
+
+
+/*黑暗模式*/
+body {
+
+  background-color: white;
+  color: black;
+
+}
+
+
+.dark-mode header * {
+  background-color: #2F3437;
+  color: white;
+}
+.dark-mode footer * {
+  background-color: rgb(100, 99, 99);
+  color: white;
+}
+
+.dark-mode {
+  background-color:#373C3F;
+  color: white;
+}
+
+.dark-mode .mybg2 * {
+  background-color:#373C3F;
+  color: white;
+}
+
+.dark-mode .modal-backdrop * {
+  background-color: rgba(0,0,0,.0001) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
